@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		496E5D52298AFE3900567C42 /* VOISFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 496E5D51298AFE3900567C42 /* VOISFramework */; };
 		49C20C7D298AF514007C3BEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C20C7C298AF514007C3BEC /* AppDelegate.swift */; };
 		49C20C7F298AF514007C3BEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C20C7E298AF514007C3BEC /* SceneDelegate.swift */; };
 		49C20C81298AF514007C3BEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C20C80298AF514007C3BEC /* ViewController.swift */; };
 		49C20C84298AF514007C3BEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C20C82298AF514007C3BEC /* Main.storyboard */; };
 		49C20C86298AF517007C3BEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C20C85298AF517007C3BEC /* Assets.xcassets */; };
 		49C20C89298AF517007C3BEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C20C87298AF517007C3BEC /* LaunchScreen.storyboard */; };
-		49C20C91298AF753007C3BEC /* SDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C20C90298AF753007C3BEC /* SDK.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,6 @@
 		49C20C85298AF517007C3BEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49C20C88298AF517007C3BEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49C20C8A298AF517007C3BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49C20C90298AF753007C3BEC /* SDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDK.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496E5D52298AFE3900567C42 /* VOISFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +58,6 @@
 		49C20C7B298AF514007C3BEC /* VOIS */ = {
 			isa = PBXGroup;
 			children = (
-				49C20C90298AF753007C3BEC /* SDK.swift */,
 				49C20C7C298AF514007C3BEC /* AppDelegate.swift */,
 				49C20C7E298AF514007C3BEC /* SceneDelegate.swift */,
 				49C20C80298AF514007C3BEC /* ViewController.swift */,
@@ -86,6 +85,9 @@
 			dependencies = (
 			);
 			name = VOIS;
+			packageProductDependencies = (
+				496E5D51298AFE3900567C42 /* VOISFramework */,
+			);
 			productName = VOIS;
 			productReference = 49C20C79298AF514007C3BEC /* VOIS.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 49C20C70298AF514007C3BEC;
+			packageReferences = (
+				496E5D50298AFE3900567C42 /* XCRemoteSwiftPackageReference "VOISFramework" */,
+			);
 			productRefGroup = 49C20C7A298AF514007C3BEC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,7 +148,6 @@
 			files = (
 				49C20C81298AF514007C3BEC /* ViewController.swift in Sources */,
 				49C20C7D298AF514007C3BEC /* AppDelegate.swift in Sources */,
-				49C20C91298AF753007C3BEC /* SDK.swift in Sources */,
 				49C20C7F298AF514007C3BEC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		496E5D50298AFE3900567C42 /* XCRemoteSwiftPackageReference "VOISFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orion7256/VOISFramework.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		496E5D51298AFE3900567C42 /* VOISFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 496E5D50298AFE3900567C42 /* XCRemoteSwiftPackageReference "VOISFramework" */;
+			productName = VOISFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 49C20C71298AF514007C3BEC /* Project object */;
 }

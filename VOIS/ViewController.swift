@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import VOISFramework
 
 final class ViewController: UIViewController {
     
@@ -19,12 +20,12 @@ final class ViewController: UIViewController {
     }
     
     private func configure() {
-        valueLabel.text = String(SDK.getRandom())
+        valueLabel.text = String(VoisSDK.getRandom())
         getButton.addTarget(self, action: #selector(getButtonClick(_:)), for: .touchUpInside)
     }
 
     @objc private func getButtonClick(_ sender : UIButton){
-        valueLabel.text = String(SDK.getRandom())
+        valueLabel.text = String(VoisSDK.getRandom())
     }
 }
 
