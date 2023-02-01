@@ -13,6 +13,7 @@
 		49C20C84298AF514007C3BEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C20C82298AF514007C3BEC /* Main.storyboard */; };
 		49C20C86298AF517007C3BEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C20C85298AF517007C3BEC /* Assets.xcassets */; };
 		49C20C89298AF517007C3BEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C20C87298AF517007C3BEC /* LaunchScreen.storyboard */; };
+		49C20C91298AF753007C3BEC /* SDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C20C90298AF753007C3BEC /* SDK.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		49C20C85298AF517007C3BEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49C20C88298AF517007C3BEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49C20C8A298AF517007C3BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49C20C90298AF753007C3BEC /* SDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDK.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		49C20C7B298AF514007C3BEC /* VOIS */ = {
 			isa = PBXGroup;
 			children = (
+				49C20C90298AF753007C3BEC /* SDK.swift */,
 				49C20C7C298AF514007C3BEC /* AppDelegate.swift */,
 				49C20C7E298AF514007C3BEC /* SceneDelegate.swift */,
 				49C20C80298AF514007C3BEC /* ViewController.swift */,
@@ -140,6 +143,7 @@
 			files = (
 				49C20C81298AF514007C3BEC /* ViewController.swift in Sources */,
 				49C20C7D298AF514007C3BEC /* AppDelegate.swift in Sources */,
+				49C20C91298AF753007C3BEC /* SDK.swift in Sources */,
 				49C20C7F298AF514007C3BEC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,16 +293,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VOIS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Vois;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = JoyDev.VOIS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -316,16 +323,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VOIS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Vois;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = JoyDev.VOIS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
