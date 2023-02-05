@@ -16,16 +16,23 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
-        // Do any additional setup after loading the view.
     }
     
     private func configure() {
-        valueLabel.text = String(VoisSDK.getRandom())
+        buttonAction()
         getButton.addTarget(self, action: #selector(getButtonClick(_:)), for: .touchUpInside)
     }
 
     @objc private func getButtonClick(_ sender : UIButton){
-        valueLabel.text = String(VoisSDK.getRandom())
+        buttonAction()
+    }
+    
+    private func buttonAction() {
+        valueLabel.text = VoisOpenSDK.getRandomFromC() //C code through public SDK function
+        print(String(random_number(0, 100))) //C code directly, without option to see its definition (public func)
+        
+        //print(String(middle_number(10, 30))) //will not work due to privateness, but next string will work
+        print(VoisOpenSDK.getMiddleFromC())
     }
 }
 
